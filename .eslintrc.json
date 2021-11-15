@@ -1,12 +1,13 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx"],
+  "plugins": ["@nrwl/nx", "@angular-eslint"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
         "@nrwl/nx/enforce-module-boundaries": "off"
+
         // "@nrwl/nx/enforce-module-boundaries": [
         //   "error",
         //   {
@@ -31,7 +32,8 @@
           {
             "suffixes": ["Component", "Page"]
           }
-        ]
+        ],
+        "@typescript-eslint/no-explicit-any": "off"
       }
     },
     {

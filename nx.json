@@ -40,6 +40,9 @@
     "api-modules-auth": {
       "tags": ["type:lib", "scope:api"]
     },
+    "api-modules-story": {
+      "tags": ["type:lib"]
+    },
     "api-modules-user": {
       "tags": ["type:lib", "scope:api"]
     },

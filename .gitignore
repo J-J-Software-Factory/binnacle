@@ -29,6 +29,7 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/nest-prisma-gql.code-snippets
 
 # misc
 /.sass-cache
@@ -43,3 +44,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
