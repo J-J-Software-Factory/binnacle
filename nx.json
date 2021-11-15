@@ -1,0 +1,69 @@
+{
+  "npmScope": "nx-admin-starter",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "OTM0YjI1ZGEtNDg4ZS00NmM5LWI5NTgtOTkzMzdiNmQyMmY1fHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "api": {
+      "tags": ["type:app", "scope:api"]
+    },
+    "api-config": {
+      "tags": ["type:lib", "scope:api"]
+    },
+    "api-guards": {
+      "tags": ["type:lib", "scope:api"]
+    },
+    "api-modules-auth": {
+      "tags": ["type:lib", "scope:api"]
+    },
+    "api-modules-user": {
+      "tags": ["type:lib", "scope:api"]
+    },
+    "api-providers": {
+      "tags": ["type:lib", "scope:api"]
+    },
+    "api-recipes": {
+      "tags": ["type:lib", "scope:api"]
+    },
+    "utils": {
+      "tags": ["type:lib", "scope:global"]
+    },
+    "web-client": {
+      "tags": ["type:app", "scope:web-client"]
+    },
+    "web-client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web-client"]
+    },
+    "web-client-modules-user": {
+      "tags": ["type:lib", "scope:web-client"]
+    },
+    "web-client-shell": {
+      "tags": ["type:lib", "scope:web-client"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@generated": ["./@generated/*"],
+      "@nx-admin-starter/api/config": ["libs/api/config/src/index.ts"],
+      "@nx-admin-starter/api/guards": ["libs/api/guards/src/index.ts"],
+      "@nx-admin-starter/api/modules/auth": ["libs/api/modules/auth/src/index.ts"],
+      "@nx-admin-starter/api/modules/user": ["libs/api/modules/user/src/index.ts"],
+      "@nx-admin-starter/api/providers": ["libs/api/providers/src/index.ts"],
+      "@nx-admin-starter/api/recipes": ["libs/api/recipes/src/index.ts"],
+      "@nx-admin-starter/utils": ["libs/utils/src/index.ts"],
+      "@nx-admin-starter/web-client/modules/user": ["libs/web-client/modules/user/src/index.ts"],
+      "@nx-admin-starter/web-client/shell": ["libs/web-client/shell/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
